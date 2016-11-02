@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #C2C2C2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    position: fixed;
+    z-index: 10;
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: #413dff;
+    text-align: center;
+}
+
+.nav-button {
+    line-height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 70px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.kev-text {
+    position: relative;
+    margin: 0 auto;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about {
+    width: 100%;
+    height: 50%;
+    background: #FAFAFA;
+    position: relative;
+}
+
+.projects {
+    width: 100%;
+    height: 50%;
+    background: #7266ff;
+    position: relative;
+}
+
+.art {
+    width: 100%;
+    height: 50%;
+    background: #677bff;
+}
+
+.contact {
+    width: 100%;
+    height: 50%;
+    background: #75d9ff;
+    position: relative;
+}
