@@ -11,6 +11,10 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+/* COLORS */
+.purple{
+  background-color: #5e3dff;
+}
 
 /* NAVIGATION BAR */
 
@@ -20,7 +24,6 @@ a, a:visited, a:hover, a:active {
     height: 70px;
     width: 100%;
     color: white;
-    background-color: #5e3dff;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -44,7 +47,6 @@ a, a:visited, a:hover, a:active {
     border-bottom-style: solid;
     border-width: 5px;
     -webkit-transition: 0.25s;
-    /* Safari */
     transition: 0.25s;
 }
 
@@ -116,34 +118,89 @@ a, a:visited, a:hover, a:active {
 
 .about {
     width: 100%;
-    height: 100%;
     background: #FAFAFA;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.card-holder{
+  width: 700px;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50 0 50 0;
+}
+
 .card {
     background-color: #FFFFFF;
-    -webkit-box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.55);
-    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.55);
-    height: 150px;
-    padding: 30;
-    padding-right: 25;
+    -webkit-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.30);
+    height: 250px;
+    margin: 15 15 15 15;
     border-radius: 5px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.card:hover, .card-small:hover{
+  -webkit-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.70);
+  -moz-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.70);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.70);
+  transform: translateY(-5px);
+}
+
+.card-small{
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.30);
+  height: 200px;
+  margin: 15 15 15 15;
+  border-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.card-title{
+  border-radius: 5px 5px 0 0;
+  height: 45px;
+  padding-left: 5%;
+  padding-top: 7px;
+  color: white;
+  font-size: 2em;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.card-content{
+  padding: 3% 5% 0 5%;
+  text-align: left;
+}
+
+.large-font{
+  font-size: 2em;
+}
+
+.med-font{
+  font-size: 1.5em;
 }
 
 .about-text {
-    width: 550px;
+    flex-grow: 2;
     text-align: left;
-    font-size: 2em;
+    order: 1;
 }
 
 .about-one {
-    width: 250px;
-    margin-left: 30px;
+    flex-grow: 1;
+    min-width:275px;
+    order: 2;
 }
 
 
