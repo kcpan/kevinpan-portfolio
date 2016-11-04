@@ -152,7 +152,7 @@ a, a:visited, a:hover, a:active {
   -webkit-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.70);
   -moz-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.70);
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.70);
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.05);
 }
 
 .card-small{
@@ -165,6 +165,7 @@ a, a:visited, a:hover, a:active {
   border-radius: 5px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  max-width: 320px;
 }
 
 .card-title{
@@ -201,6 +202,24 @@ a, a:visited, a:hover, a:active {
     flex-grow: 1;
     min-width:275px;
     order: 2;
+}
+
+@media (max-width: 620px) {
+  .large-font{
+    font-size: 1.9em;
+  }
+}
+
+@media (max-width: 470px) {
+  .large-font{
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 360px) {
+  .large-font{
+    font-size: 1.4em;
+  }
 }
 
 
